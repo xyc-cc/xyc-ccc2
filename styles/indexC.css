@@ -1,0 +1,161 @@
+
+.foot{
+    max-width: 23.4375rem;
+    min-width: 10rem;
+    margin: 0 auto;
+    height:2.9125rem;
+    width: 100%;
+    background: #ffffff;
+    position: fixed;
+    bottom: 0;
+    border-top: #f6f6f6 solid 0.0938rem;
+    border-top: #ffffff solid 0.1563rem;
+}
+.top{
+    box-sizing: border-box;
+    max-width: 23.4375rem;
+    min-width: 10rem;
+    margin: 0 auto;
+    height:3.125rem;
+    width: 100%;
+    padding: 1rem 1.0938rem 0 1.0938rem;
+    background: #ffffff;
+    border-bottom: #f6f6f6 solid 0.0938rem;
+}
+.person{
+    text-align: center;
+}
+
+.person>h1{
+    font-size: 0.875rem;
+}
+.person>h3{
+    color:#9fec8f;
+    font-size: 0.5625rem;
+    font-weight: 400;
+    margin-top:-0.3125rem;
+}
+.ct0,
+.cn3{
+    width: 1.7188rem;
+    height:1.375rem;
+}
+.cn7{
+    width: 6.3438rem;
+    height: 6.25rem;
+}
+.cn11,
+.cn14,
+.cn17{
+    width: 2.6875rem;
+    height: 2.1563rem;
+}
+
+/* 中间部分 */
+
+.title1,
+.title2{
+    height: 2.5rem;
+    width: calc(100% - 5.625rem);
+    margin-left:2.8125rem;
+    margin-right: 2.8125rem;
+    border-bottom: 0.0938rem solid rgb(245, 245, 245);
+}
+
+.title1 h2,
+.title2 h2{
+    font-size:0.875rem;
+    font-weight:300;
+    color:rgba(28,23,33,1);
+    line-height:1.0938rem;
+    margin-top: 0.625rem;
+}
+
+.title2{
+    margin-top: -0.4688rem;
+}
+
+.top1{
+    width:calc(100% - 2.375rem);
+    margin-left:1.125rem;
+    margin-right:1.25rem;
+    height: 7.8125rem;
+}
+
+
+.top1 .u1,
+.top1 .u2,
+.top1 .u3,
+.top1 .u4{
+    height: 4.375rem;
+    width: 4.375rem;
+    border-radius: 50%;
+}
+
+.top2{
+    width:calc(100% - 2.375rem);
+    margin-left:1.125rem;
+    margin-right:1.25rem;
+    height: 39.0625rem;
+    margin-bottom: 3.125rem;
+}
+.top2 .u1,
+.top2 .u2,
+.top2 .u3,
+.top2 .u4,
+.top2 .u5,
+.top2 .u6,
+.top2 .u7,
+.top2 .u8,
+.top2 .u9,
+.top2 .u10,
+.top2 .u11,
+.top2 .u12{
+    height: 6.25rem;
+    width: 6.25rem;
+    border-radius: 50%;
+}
+
+.users{
+    padding-top: 1.4063rem;
+    padding-bottom: 0.3125rem;
+    height:7.5rem;
+    width: 6.25rem;
+}
+.users img{
+    align-self: flex-start;
+}
+
+.users h3{
+    align-self: flex-end;
+    font-size:0.7813rem;
+    font-weight:400;
+    color:rgba(27,23,32,1);
+    line-height:0.9063rem;
+}
+
+.users a{
+    position: relative;
+
+}
+
+.users a span{
+    position: absolute;
+    background: red;
+    display: inline-block;
+    height: 0.75rem;
+    width: 0.75rem;
+    top:0rem;
+    right: 0.1875rem;
+    border-radius: 50%;
+    border: 0.125rem solid #fff;
+}
+
+.users a span{
+    height: 1rem;
+    width: 1rem;
+}
+
+.users a .green{
+    background: rgb(83, 222, 56);
+}

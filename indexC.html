@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./js/rem.js"></script>
+    <link rel="stylesheet" href="./styles/indexC.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <title>考核手机端三</title>
+</head>
+
+<body>
+    <div class="body_app">
+        <header>
+            <div class="top flex flex-sb flex-center">
+                <a href=""><img class="ct0" src="./images/Chat_list/Chat_list_0.png" alt=""></a>
+                <div class="person">
+                    <h1>Contacts</h1>
+                </div>
+                <a href=""><img class="cn3" src="./images/Contacts/Contacts_03.png" alt=""></a>
+            </div>
+        </header>
+        <section>
+            <div class="main">
+                <div class="title1 flex flex-center flex-c">
+                    <h2>REСENT CONTACT</h2>
+                </div>
+                <div class="top1 flex flex-center flex-sb">
+                    <div><img class="u1" src="./images/Chat_list/u1.jpg" alt=""><span></div>
+                    
+                    <img class="u2" src="./images/Chat_list/u2.jpg" alt="">
+                    <img class="u3" src="./images/Chat_list/u3.jpg" alt="">
+                    <img class="u4" src="./images/Chat_list/u4.jpg" alt="">
+                </div>
+                <div class="title2 flex flex-center flex-c">
+                    <h2>ALL CONTACT</h2>
+                </div>
+                <div>
+                    <div class="top2 flex flex-sb flex-wrap">
+                        <div class="users flex flex-c flex-wrap">
+                            <img class="cn7" src="./images/Contacts/Contacts_07.png" alt="">
+                            <h3></h3>
+                        </div>
+                        <div class="users flex flex-c flex-wrap">
+                            <a href=""> <img class="u1" src="./images/Chat_list/u1.jpg" alt=""><span class="green"></span></a>
+                            <h3>Sonmerfield</h3>
+                        </div>
+                        <div class="users flex flex-c flex-wrap">
+                            <a href=""> <img class="u2" src="./images/Chat_list/u2.jpg" alt=""><span></span></a>
+                            <h3>Eartha</h3>
+                        </div>
+                        <div class="users flex flex-c flex-wrap">
+                            <a href=""> <img class="u3" src="./images/Chat_list/u3.jpg" alt=""><span class="green"></span></a>
+                            <h3>Larry</h3>
+                        </div>
+                        <div class="users flex flex-c flex-wrap">
+                            <a href=""> <img class="u4" src="./images/Chat_list/u4.jpg" alt=""><span></span></a>
+                            <h3>Hachilah</h3>
+                        </div>
+                        <div class="users flex flex-c flex-wrap">
+                            <a href=""> <img class="u5" src="./images/Chat_list/u5.jpg" alt=""><span class="green"></span></a>
+                            <h3>Arabella</h3>
+                        </div>
+                        <div class="users flex flex-c flex-wrap">
+                            <a href=""> <img class="u6" src="./images/Chat_list/u6.jpg" alt=""><span></span></a>
+                            <h3>JobEleanore</h3>
+                        </div>
+                        <div class="users flex flex-c flex-wrap">
+                            <a href=""> <img class="u7" src="./images/Chat_list/u7.jpg" alt=""><span></span></a>
+                            <h3>RrdTammy</h3>
+                        </div>
+                        <div class="users flex flex-c flex-wrap">
+                            <a href=""> <img class="u8" src="./images/Chat_list/u8.jpg" alt=""><span></span></a>
+                            <h3>PegRuper</h3>
+                        </div>
+                        <div class="users flex flex-c flex-wrap">
+                            <a href=""> <img class="u9" src="./images/Chat_list/u9.jpg" alt=""><span></span></a>
+                            <h3>Mega</h3>
+                        </div>
+                        <div class="users flex flex-c flex-wrap">
+                            <a href=""> <img class="u10" src="./images/Chat_list/u10.jpg" alt=""><span class="green"></span></a>
+                            <h3>MarjoryDe</h3>
+                        </div>
+                        <div class="users flex flex-c flex-wrap">
+                            <a href=""> <img class="u11" src="./images/Chat_list/u11.jpg" alt=""><span></span></a>
+                            <h3>ToutBetty</h3>
+                        </div>
+                        <div class="users flex flex-c flex-wrap">
+                            <a href=""> <img class="u12" src="./images/Chat_list/u12.jpg" alt=""><span class="green"></span></a>
+                            <h3>Elaine</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <footer>
+
+            <div class="foot flex flex-sa flex-center">
+                <img class="cn11" src="./images/Contacts/Contacts_11.png" alt="">
+                <img class="cn14" src="./images/Contacts/Contacts_14.png" alt="">
+                <img class="cn17" src="./images/Contacts/Contacts_17.png" alt="">
+            </div>
+        </footer>
+    </div>
+    <script>
+        //侧滑显示删除按钮
+        var expansion = null; //是否存在展开的list
+        var container = document.querySelectorAll('.list li .container-div');
+        for (var i = 0; i < container.length; i++) {
+            var x, y, X, Y, swipeX, swipeY;
+            container[i].addEventListener('touchstart', function (event) {
+                x = event.changedTouches[0].pageX;
+                y = event.changedTouches[0].pageY;
+                swipeX = true;
+                swipeY = true;
+            });
+            container[i].addEventListener('touchmove', function (event) {
+                X = event.changedTouches[0].pageX;
+                Y = event.changedTouches[0].pageY;
+                // 左右滑动
+                if (swipeX && Math.abs(X - x) - Math.abs(Y - y) > 0) {
+                    // 阻止事件冒泡
+                    event.stopPropagation();
+                    if (X - x > 15) {   //右滑
+                        event.preventDefault();
+                        this.className = "";    //右滑收起
+                    }
+                    if (x - X > 15) {   //左滑
+                        event.preventDefault();
+                        this.className = "swipeleft";   //左滑展开
+                        expansion = this;
+                    }
+                    swipeY = false;
+                }
+                // 上下滑动
+                if (swipeY && Math.abs(X - x) - Math.abs(Y - y) < 0) {
+                    swipeX = false;
+                }
+            });
+        }
+        var i = document.querySelectorAll('.list li .delete-icon');
+        i.forEach(function (item, index) {
+            console.log(item)
+            i[index].onclick = function () {
+                this.parentNode.parentNode.parentNode.style.display = "none";
+            };
+        });
+    </script>
+</body>
+
+</html>
